@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldenChilds-Works</title>
+    <link rel="stylesheet" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 70px 10px;
+        background-color: #f5f5f5;
+    }
+
+    h1, h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .activity, .award, .timeline-event {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity img, .award img, .timeline-event img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .activity p, .award p, .timeline-event p {
+        color: black;
+    }
+    .activity p:hover, .award p:hover, .timeline-event p:hover {
+        color: whitesmoke;
+    }
+
+    .activity:hover, .award:hover, .timeline-event:hover {
+        background-color: #E3CBD4;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .awards ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .awards li {
+        margin-bottom: 20px;
+        font-family: Tahoma;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .awards li img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .timeline ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline li {
+        margin-bottom: 20px;
+        color: #333;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+    }
+
+    .timeline li:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #7F4690;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .timeline li:hover {
+        background-color: #E3CBD4;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro img {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .events p , .organization p{
+        color: black;
+    }
+
+    .event, .future-event {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .event img, .future-event img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .event:hover, .future-event:hover {
+        background-color: #E3CBD4;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .organization {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .organization img {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .organization:hover {
+        background-color: #E3CBD4;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .event-wrapper, .future-event-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .event, .future-event {
+        flex: 1 1 calc(33% - 20px);
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">GoldenChild</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="donation test.html">Donation</a>
+    </div>
+</div>
+<main>
+    <section id="our-work">
+        <h1>Our Work</h1>
+        <h1>Empowering Children, Transforming Futures</h1>
+        <div class="container">
+            <p><i>"We believe that every child deserves a chance to grow, learn, and thrive. That's why we're dedicated to providing education, health, and happiness to children in need."</i></p>
+            <div class="intro">
+                <img src="Kids.jpg" alt="Kids playing">
+                <p>Our mission is to create a world where every child has access to quality education, healthcare, and opportunities to succeed.</p>
+            </div>
+            <div class="activities">
+                <h2>Our Programs</h2>
+                <div class="activity">
+                    <img src="childhood.jpg" alt="Early Childhood Development">
+                    <h3>Early Childhood Development</h3>
+                    <p>We provide early childhood education to children aged 3-5, focusing on cognitive, social, and emotional development.</p>
+                </div>
+                <div class="activity">
+                    <img src="primary.jpg" alt="Primary Education">
+                    <h3>Primary Education</h3>
+                    <p>We support primary education for children aged 6-12, providing access to quality education and resources.</p>
+                </div>
+                <div class="activity">
+                    <img src="training.jpg" alt="Vocational Training">
+                    <h3>Vocational Training</h3>
+                    <p>We offer vocational training for young adults, equipping them with skills to secure employment and become self-sufficient.</p>
+                </div>
+            </div>
+            <div class="awards">
+                <h2>Awards and Recognition</h2>
+                <div class="award">
+                    <img src="Award1.jpg" alt="Award 1">
+                    <div class="award-description">
+                        <h3>GOLDEN HEARTS AWARD</h3>
+                        <p>Recognized for our commitment to improving the lives of children globally, the Golden Hearts Award celebrates our efforts in education and healthcare.</p>
+                    </div>
+                </div>
+                <div class="award">
+                    <img src="Award.jpg" alt="Award 2">
+                    <div class="award-description">
+                        <h3>TheirWorld EDUCATION INNOVATION AWARDS - WINNER 2021</h3>
+                        <p>Our innovative approach to education has been acknowledged by the TheirWorld Education Innovation Awards, highlighting our impact on children's futures.</p>
+                    </div>
+                </div>
+
+            <div class="timeline">
+                <h2>Our Journey</h2>
+                <p>Take a look at our journey so far:</p>
+                <div class="timeline-event">
+                    <h3>2015: Founded KidsCare Foundation with a mission to empower children</h3>
+                    <p>Founded in 2015, KidsCare Foundation started with the vision of empowering children through education, healthcare, and support services. Our goal was to create a lasting impact on the lives of underprivileged children, providing them with the tools they need to succeed in life.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2017: Launched our first education program for 100 children</h3>
+                    <p>In 2017, we launched our inaugural education program, reaching 100 children in need. This program aimed to bridge the educational gap by providing quality learning opportunities and resources to children who otherwise lacked access.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2019: Expanded our programs to reach 500 children</h3>
+                    <p>By 2019, our programs had expanded significantly, reaching 500 children across various communities. This expansion allowed us to broaden our impact and extend our reach to more underserved areas, ensuring that more children could benefit from our services.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2020: Received the Golden Hearts Award</h3>
+                    <p>In 2020, KidsCare Foundation was honored to receive the prestigious Golden Hearts Award for our commitment to improving the lives of children. This recognition underscored our dedication and efforts in creating positive change and advocating for children's rights.</p>
+                </div>
+                <div class="timeline-event">
+                    <h3>2022: Received the OBE</h3>
+                    <p>In June 2022, our CEO and co-founder was awarded an OBE in this year’s Queen’s Birthday Honours for services to the protection and education of marginalized children worldwide. Our CEO received the award at a ceremony at Windsor Castle in March 2023.</p>
+                </div>
+            </div>
+            <div class="events">
+                <h2>Past Events</h2>
+                <div class="event-wrapper">
+                    <div class="event">
+                        <img src="past_event1.jpg" alt="Past Event 1">
+                        <h3>Children's Day Celebration 2022</h3>
+                        <p>We celebrated Children's Day with over 200 kids, featuring fun activities, games, and educational sessions.</p>
+                    </div>
+                    <div class="event">
+                        <img src="past_event2.jpg" alt="Past Event 2">
+                        <h3>Annual Charity Walk 2021</h3>
+                        <p>Our annual charity walk raised funds to support our education and healthcare programs.</p>
+                    </div>
+                    <div class="event">
+                        <img src="past_event3.jpg" alt="Past Event 3">
+                        <h3>Health Camp 2020</h3>
+                        <p>We organized a health camp providing free check-ups and health education to children and their families.</p>
+                    </div>
+                </div>
+                <h2>Future Events</h2>
+                <div class="future-event-wrapper">
+                    <div class="future-event">
+                        <img src="future_event1.jpg" alt="Future Event 1">
+                        <h3>Education Fair 2024</h3>
+                        <p>Join us for an education fair where we'll showcase our programs and offer free educational resources.</p>
+                    </div>
+                    <div class="future-event">
+                        <img src="future_event2.jpg" alt="Future Event 2">
+                        <h3>Community Sports Day 2024</h3>
+                        <p>Our community sports day aims to promote physical fitness and teamwork among children.</p>
+                    </div>
+                    <div class="future-event">
+                        <img src="future_event3.jpg" alt="Future Event 3">
+                        <h3>Annual Charity Gala 2024</h3>
+                        <p>Support our cause by attending our annual charity gala, featuring performances, auctions, and more.</p>
+                    </div>
+                    <div class="future-event">
+                        <img src="future_event4.jpg" alt="Future Event 4">
+                        <h3>Volunteer Training Program 2024</h3>
+                        <p>We are launching a volunteer training program to empower individuals to contribute to our mission effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="organizations">
+                <h2>Our Partners</h2>
+                <p>We collaborate with the following organizations to further our mission:</p>
+                <div class="organization">
+                    <img src="partner1.jpg" alt="Partner 1">
+                    <h3>Save the Children</h3>
+                    <p>Save the Children works in over 100 countries to improve the lives of children through better education, health care, and economic opportunities.</p>
+                </div>
+                <div class="organization">
+                    <img src="partner2.jpg" alt="Partner 2">
+                    <h3>UNICEF</h3>
+                    <p>UNICEF is a United Nations agency responsible for providing humanitarian and developmental aid to children worldwide.</p>
+                </div>
+                    <div class="organization">
+                        <img src="partner3.jpg" alt="Partner 3">
+                        <h3>The Global Fund for Children</h3>
+                        <p>GFC pursues this mission by making small grants to innovative community-based organizations that provide services and programs for children that government and large aid organizations often do not reach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <table>
+            <tr>
+                <td id="time" colspan="2">At GoldenChild, every child's future matters. Your support fuels our mission to provide love, care, and opportunity to children in need. Together, we're building a brighter tomorrow. Thank you for making a difference.</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top: 10px;">
+                    <p style="text-align: left;">Contact Us</p>
+                    <ul>
+                        <li>Call us at (+60)6400 6762</li>
+                        <li>Email: GoldenChild@gmail.com</li>
+                        <li>Mailing address: P.O.Box 8171, Kelana Jaya, 46783 Petaling Jaya, Selangor, Malaysia</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer-links">
+                    <a href="#">Cookies Preferences</a> |
+                    <a href="#">About Us</a> |
+                    <a href="#">Terms & Conditions</a> |
+                    <a href="#">Privacy Policy</a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p>© 2024 | GoldenChild Charity | All rights reserved</p>
+    </footer>
+</body>
+</html>

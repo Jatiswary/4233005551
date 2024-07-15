@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM</title>
+     <link rel="stylesheet" href="styles.css">
+     
+</head>
+<body>
+<div style=" width: 50%;margin:25%;margin-top:40px;margin-bottom:0px;font-family: arial;" >
+    <div class="navbar">
+        <div class="logo">GoldenChild </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="works.html">Works</a>
+            <a href="donation test.html">Donation</a>
+        </div>
+    </div>
+    <div class="container" style="width: 90%">
+    <h2 style="color:#abacb8;text-align: center; font-size:30px">DONATION'S FORM</h2>
+
+    <form>
+        <fieldset style="text-align: left; background-color:#abacb8">
+            <label id="choose" style="font-size:30px; font-family: Cooper Black;color: #362580;">Choose Donation Type</label><br><br>
+            <div style="font-size:20px;color:#475a66">
+                <ol>
+                    <li><a href="#FinancialDonation"  style="margin-right: 50px;color:#362580; text-decoration:none;font-family: Comic Sans MS;t">Financial Donation</a></li>
+                    <li><a href="#MaterialDonation"  style="color:#362580;text-decoration:none;font-family: Comic Sans MS;">Material Donation</a></li>
+                </ol> 
+            </div><br><br>
+
+            <div class="form-section" id="FinancialDonation">
+                <fieldset>
+                    <legend style="font-size: 25px; color:black;">Financial Donation Form</legend>
+                <table>
+                    <tr>
+                        <th><label>First Name</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Enter your first name" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Last Name</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Enter your last name" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>NRIC/Passport No</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" placeholder="Enter your NRIC number" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Phone Number</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" style="width: 100%;" placeholder="012-345 6789"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Email</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Enter your email address" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Address</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Gender</label></th>
+                    </tr>
+                    <tr>
+                    <td><label>Male</label>
+                        <input type="radio" name="Gender">
+                        <label>Female</label>
+                        <input type="radio" name="Gender" >
+                    </td>
+                    </tr>
+
+                    <tr>
+                        <th><label>Recurring Donation Option</label></th>
+                    </tr>
+                    <tr><td>
+                        <input type="radio" name="RDO">
+                        <label>One-time</label>
+                    </td></tr>
+                    <tr><td>
+                        <input type="radio" name="RDO">
+                        <label>Weekly</label>
+                    </td></tr>
+                    <tr><td>
+                        <input type="radio" name="RDO" >
+                        <label>Monthly</label>
+                    </td></tr>
+
+                    <tr>
+                        <th><label>Amount</label></th>
+                    <tr>
+                    <tr>
+                        <td><input type="number" step="00.01" style="width: 34%;" placeholder="RM 00.00"></td>
+                    </tr>
+                    <tr>
+                        <th>Payment method</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select style="color:#765cb8;" >
+                                <option label="Credit/Debit Card" style="font-weight: bold;">
+                                </option>
+
+                                <option style="font-weight: bold;" label="Apple Pay">
+                                </option>
+
+                                <optgroup label="Online Banking:">
+                                    <option>Maybank2u</option>
+                                    <option>CIMB Clicks</option>
+                                    <option>Public Bank</option>
+                                    <option>Ambank</option>
+                                    <option>BSN</option>
+                                    <option>Bank Rakyat</option>
+                                    <option>Bank Islam</option>
+                                    <option>HSBC Online</option>
+                                    <option>Agrobank</option>
+                                </optgroup>
+
+                                <optgroup label="Cash Payment at Convenience Store:">
+                                    <option>Cash Payment at 7-Eleven</option>
+                                    <option>Cash Payment at KK Mart</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <tr>
+                            <th><label>Note</label></th>
+                        </tr>
+                        <tr>
+                            <td><textarea rows="4" style="width: 100%;">Wish you everlasting joy and happiness..............</textarea></td>
+                        </tr>
+                        <tr>
+                          <td>  
+                            <input type="checkbox" checked>
+                            <label>I consent to receiving communications via email. Opting out means you will not be included in any mailing lists, though you will still receive your donation receipt by email.</label>
+                        </td>
+                    </tr>
+                </table>
+                 <center><a href="#message" class="message" style="font-size:30px;color:#384a54;">SEND</a></center>
+
+                <a href="#choose" style="color:#384a54">TOP</a>
+            </fieldset>
+        
+
+        <div class="form-section" id="MaterialDonation">
+                <fieldset style="text-align: left; background-color:#abacb8;">
+                    <legend style="font-size: 25px; color:black">Material Donation Form</legend>
+                <table>
+                    <tr>
+                        <th><label> Name</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Enter your first name" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Last Name</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Enter your last name" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>NRIC/Passport No</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" placeholder="Enter your NRIC number" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Phone Number</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" style="width: 100%;"placeholder="012-345 6789"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Email</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Enter your email address" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Address</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Gender</label></th>
+                    </tr>
+                    <tr>
+                    <td><label>Male</label>
+                        <input type="radio" name="Gender">
+                        <label>Female</label>
+                        <input type="radio" name="Gender" >
+                    </td>
+                    </tr>
+                    <tr>
+                        <th><label>Type of Items Donated</label></th>
+                    </tr>
+                    <tr>
+                        <td >
+                        <select style="color:#765cb8;" >
+                            <option>Book or stationary</option>
+                            <option>Toys</option>
+                            <option>clothes </option>
+                            <option>Medical service</option>
+                            <option>Food</option>
+                        </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>Target Age Ranges</label></th>
+                    </tr>
+                    <tr><td>
+                        <input type="radio" name="age">
+                        <label>Infants (0-2 years)</label>
+                    </td></tr>
+                    <tr><td>
+                        <input type="radio" name="age">
+                        <label>Toddlers (2-4 years)</label>
+                    </td></tr>
+                    <tr><td>
+                        <input type="radio" name="age" >
+                        <label>Preschoolers (4-6 years)</label>
+                    </td></tr>  
+                    <tr><td>  
+                        <input type="radio" name="age" >
+                        <label>Early School Age (6-8 years)</label>
+                    </td></tr> 
+                    <tr><td>   
+                        <input type="radio" name="age" >
+                        <label>Tweens and Teens (9+ years)</label>
+                    </td></tr>
+                    <tr><td>   
+                        <input type="radio" name="age" >
+                        <label>Mix(suitable for multiple age ranges)</label>
+                    </td></tr>
+                    <tr>
+                        <th><label>Condition of Items  (0=Heavily Used,5=Gently Used,10=New)</label></th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">0<input type="range" value="8" step="5" min="0" max=10>10</td>
+                    </tr>
+
+                    <tr>
+                        <th><label>Note</label></th>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="4" style="width: 100%;">Wish you everlasting joy and happiness..............</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" checked>
+                            <label>I consent to receiving communications via email. Opting out means you will not be included in any mailing lists, though you will still receive your donation receipt by email.</label>
+                        </td>
+                    </tr>
+                </table>
+                <center><a href="#message" class="message" style="font-size:30px;color:#384a54;">SEND</a></center>
+
+                <a href="#choose" style="color:#384a54">TOP</a>
+            </fieldset>
+        </div></tr></tr></tr></table></fieldset>
+            <br><br><br>
+
+            <fieldset style="background-color: #6de376">
+                <tr>
+                <div id="message">
+                <a href="#message" style="text-decoration: none;">Thank you for submitting your information! We will notify you through email as soon as possible.</a>
+                </div>
+                </tr>
+            </fieldset><br>
+            <tr>
+                <td><a href="index.html" style="text-decoration:none;color: antiquewhite;font-weight: bold;"> Back To Home>></a></td>
+            </tr> 
+        </div>
+    </form>
+</tr></tr></tr></table></fieldset></div></fieldset></form></div></div>
+<footer class="footer" >
+        <table>
+            <tr>
+                <td id="time" colspan="2">At GoldenChild, every child's future matters. Your support fuels our mission to provide love, care, and opportunity to children in need. Together, we're building a brighter tomorrow. Thank you for making a difference.</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-top: 10px;">
+                	<p style="text-align: left;">Contact Us</p>
+                    <ul>
+                        <li>Call us at (+60)6400 6762</li>
+                        <li>Email: GoldenChild@gmail.com</li>
+                        <li>Mailing address: P.O.Box 8171, Kelana Jaya, 46783 Petaling Jaya, Selangor, Malaysia</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer-links">
+                    <a href="#">Cookies Preferences</a> |
+                    <a href="#">About Us</a> |
+                    <a href="#">Terms & Conditions</a> |
+                    <a href="#">Privacy Policy</a>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <p>© 2024 | GoldenChild Charity | All rights reserved</p>
+    </footer>
+</body>
+</html>
+            
